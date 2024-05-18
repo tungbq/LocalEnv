@@ -4,17 +4,20 @@
 source "../common/common.sh"
 
 LANGUAGE="powershell"
+script_name=$0
 script_path=$1
-check_input $0 $script_path
-CMD="/tmp/$script_path"
+check_input $script_name $script_path
 
 # Load from common scipt
-yaml_file=$CONFIG_FILE_PATH
-check_file_exists $yaml_file
+check_file_exists $CONFIG_FILE_PATH
 
 # Read and parse the YAML file
-image=$(yq e ".$LANGUAGE.image" $yaml_file)
-container_name=$(yq e ".$LANGUAGE.default_container_name" $yaml_file)
+image=$(yq e ".$LANGUAGE.image" $CONFIG_FILE_PATH)
+container_name=$(yq e ".$LANGUAGE.default_container_name" $CONFIG_FILE_PATH)
 
 # Command to execute
-execute_in_docker "$image" "$container_name" "$CMD"
+CMD="/tmp/$script_path"
+docker run --rm \
+  --name "$container_name" \
+  -v "$(pwd)/src":/tmp/src \
+  "$image" $CMD
