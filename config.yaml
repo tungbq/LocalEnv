@@ -2,11 +2,14 @@
 python:
   image: "python:3.12"
   default_container_name: "pyEnv"
+  base_command: "python"
 
 powershell:
   image: "mcr.microsoft.com/powershell:latest"
   default_container_name: "psEnv"
+  base_command: ""
 
 groovy:
   image: "groovy:latest"
   default_container_name: "groovyEnv"
+  base_command: "groovy"
