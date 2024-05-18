@@ -20,3 +20,7 @@ Before you begin, ensure that you have Docker installed. It's also helpful to ha
         <td>✔️ <a href="./env/python/README.md">Python Usage</a></td>
     </tr>
 </table>
+
+## Troubleshooting
+
+- For common issue, visit [troubeshooting.md](./docs/troubeshooting.md)
