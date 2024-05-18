@@ -1,0 +1,8 @@
+# Configuration file for LocalEnv tool
+python:
+  images: "python:3.12"
+  default_container_name: "pyenv"
+ 
+powershell:
+  images:  "mcr.microsoft.com/powershell:latest"
+  default_container_name: "psenv"
