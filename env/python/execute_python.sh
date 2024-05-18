@@ -13,10 +13,6 @@ usage() {
 
 script_path=$1
 
-# Variables
-container_name="pytest01"
-src_dir="$(pwd)/src"
-
 # Load from common
 yaml_file=$CONFIG_FILE_PATH
 
