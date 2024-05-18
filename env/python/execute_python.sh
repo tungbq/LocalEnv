@@ -22,12 +22,6 @@ if [ -z "$script_path" ]; then
   usage
 fi
 
-# Check if the script file exists
-if [ ! -f "$script_path" ]; then
-  echo "Error: Script file '$script_path' not found."
-  exit 1
-fi
-
 # Execute the Python script inside Docker
 docker run --rm \
   --name "$container_name" \
