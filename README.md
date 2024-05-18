@@ -23,9 +23,15 @@ Before you begin, ensure that you have Docker installed. It's also helpful to ha
     </tr>
     <tr>
         <td>Powershell</td>
-        <td><a href="./env/powershell/">powershell image</a></td>
         <td><a href="https://hub.docker.com/_/microsoft-powershell">microsoft-powershell</a></td>
+        <td><a href="./env/powershell/">powershell image</a></td>
         <td>✔️ <a href="./env/powershell/README.md">Powershell Usage</a></td>
+    </tr>
+    <tr>
+        <td>Groovy</td>
+        <td><a href="https://hub.docker.com/_/groovy">groovy image</a></td>
+        <td><a href="./env/groovy/">groovy</a></td>
+        <td>✔️ <a href="./env/groovy/README.md">Groovy Usage</a></td>
     </tr>
 </table>
 
