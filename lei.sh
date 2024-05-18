@@ -28,19 +28,18 @@ check_input() {
 
 # Variables
 CONFIG_FILE_PATH="./config.yaml"
-LANGUAGE=$1
+language=$1
 script_path=$2
-src_dir=$(basename $script_path)
 
-check_input $LANGUAGE $script_path
+check_input $language $script_path
 
 # Load from common scipt
 check_file_exists $CONFIG_FILE_PATH
 
 # Read and parse the YAML file
-image=$(yq e ".$LANGUAGE.image" $CONFIG_FILE_PATH)
-container_name=$(yq e ".$LANGUAGE.default_container_name" $CONFIG_FILE_PATH)
-base_cmd=$(yq e ".$LANGUAGE.base_command" $CONFIG_FILE_PATH)
+image=$(yq e ".$language.image" $CONFIG_FILE_PATH)
+container_name=$(yq e ".$language.default_container_name" $CONFIG_FILE_PATH)
+base_cmd=$(yq e ".$language.base_command" $CONFIG_FILE_PATH)
 
 # Command to execute
 echo "Running docker"
