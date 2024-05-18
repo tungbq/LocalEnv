@@ -27,6 +27,7 @@ check_input() {
 }
 
 # Variables
+echo "Initialize variables"
 CONFIG_FILE_PATH="./config.yaml"
 language=$1
 script_path=$2
@@ -34,15 +35,15 @@ script_path=$2
 check_input $language $script_path
 
 # Load from common scipt
+echo "Load config file $CONFIG_FILE_PATH"
 check_file_exists $CONFIG_FILE_PATH
-
 # Read and parse the YAML file
 image=$(yq e ".$language.image" $CONFIG_FILE_PATH)
 container_name=$(yq e ".$language.default_container_name" $CONFIG_FILE_PATH)
 base_cmd=$(yq e ".$language.base_command" $CONFIG_FILE_PATH)
 
 # Command to execute
-echo "Running docker"
+echo "Execute $language script in docker..."
 
 docker run --rm \
   --name "$container_name" \
