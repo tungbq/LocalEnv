@@ -16,8 +16,8 @@ image=$(yq e ".$LANGUAGE.image" $CONFIG_FILE_PATH)
 container_name=$(yq e ".$LANGUAGE.default_container_name" $CONFIG_FILE_PATH)
 
 # Command to execute
-CMD="/tmp/$script_path"
 docker run --rm \
   --name "$container_name" \
   -v "$(pwd)/src":/tmp/src \
-  "$image" $CMD
+  -w /tmp \
+  "$image" $script_path

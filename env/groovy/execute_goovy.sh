@@ -3,7 +3,7 @@
 # Import common script
 source "../common/common.sh"
 
-LANGUAGE="python"
+LANGUAGE="groovy"
 script_name=$0
 script_path=$1
 check_input $script_name $script_path
@@ -20,4 +20,4 @@ docker run --rm \
   --name "$container_name" \
   -v "$(pwd)/src":/tmp/src \
   -w /tmp/ \
-  "$image" python $script_path
+  "$image" groovy $script_path
