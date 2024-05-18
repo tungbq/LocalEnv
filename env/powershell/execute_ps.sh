@@ -24,9 +24,11 @@ fi
 
 # Command to execute
 CMD="/tmp/$script_path"
+echo "Running command: $CMD"
 
 # Execute the Python script inside Docker
-docker run --rm \
+set -x
+docker run --privileged --rm \
   --name "$container_name" \
   -v "$src_dir":/tmp/src \
   "$powershell_image" $CMD
