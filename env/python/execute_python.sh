@@ -1,20 +1,32 @@
 #!/bin/bash
 
-# Usage: ./execute_python.sh src/test.py
+# Import common script
+source "../common/common.sh"
 
-script_path=$1
-
-# Variables
-python_image="python:3.11"
-container_name="pytest01"
-src_dir="$(pwd)/src"
-
+# Usage: ./execute_python.sh src/demo.py
 # Function to display usage information
 usage() {
   echo "Usage: $0 <script_path>"
   echo "Example: $0 src/test.py"
   exit 1
 }
+
+script_path=$1
+
+# Variables
+container_name="pytest01"
+src_dir="$(pwd)/src"
+
+# Load from common
+yaml_file=$CONFIG_FILE_PATH
+
+check_file_exists $yaml_file
+
+# Read and parse the YAML file
+python_image=$(yq e '.python.images' $yaml_file)
+container_name=$(yq e '.python.default_container_name' $yaml_file)
+echo "python_image: $python_image"
+echo "container_name: $container_name"
 
 # Check if the script name is provided
 if [ -z "$script_path" ]; then
@@ -24,17 +36,4 @@ fi
 
 # Command to execute
 CMD="python /tmp/$script_path"
-
-# Execute the Python script inside Docker
-docker run --rm \
-  --name "$container_name" \
-  -v "$src_dir":/tmp/src \
-  "$python_image" $CMD
-
-# Check the exit status of the Docker run command
-if [ $? -eq 0 ]; then
-  echo "Script executed successfully."
-else
-  echo "Script execution failed."
-  exit 1
-fi
+execute_in_docker "$python_image" "$container_name" "$CMD"
