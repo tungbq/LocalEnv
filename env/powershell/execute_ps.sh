@@ -1,20 +1,28 @@
 #!/bin/bash
 
-# Usage: ./execute_python.sh src/test.py
+# Import common script
+source "../common/common.sh"
 
-script_path=$1
-
-# Variables
-powershell_image="mcr.microsoft.com/powershell"
-container_name="ps-test01"
-src_dir="$(pwd)/src"
-
+# Usage: ./execute_python.sh src/demo.py
 # Function to display usage information
 usage() {
   echo "Usage: $0 <script_path>"
   echo "Example: $0 src/demo.ps1"
   exit 1
 }
+
+script_path=$1
+
+# Load from common
+yaml_file=$CONFIG_FILE_PATH
+
+check_file_exists $yaml_file
+
+# Read and parse the YAML file
+powershell_image=$(yq e '.powershell.image' $yaml_file)
+container_name=$(yq e '.powershell.default_container_name' $yaml_file)
+echo "powershell_image: $powershell_image"
+echo "container_name: $container_name"
 
 # Check if the script name is provided
 if [ -z "$script_path" ]; then
@@ -24,19 +32,4 @@ fi
 
 # Command to execute
 CMD="/tmp/$script_path"
-echo "Running command: $CMD"
-
-# Execute the Python script inside Docker
-set -x
-docker run --privileged --rm \
-  --name "$container_name" \
-  -v "$src_dir":/tmp/src \
-  "$powershell_image" $CMD
-
-# Check the exit status of the Docker run command
-if [ $? -eq 0 ]; then
-  echo "Script executed successfully."
-else
-  echo "Script execution failed."
-  exit 1
-fi
+execute_in_docker "$powershell_image" "$container_name" "$CMD"

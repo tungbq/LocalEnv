@@ -19,7 +19,7 @@ yaml_file=$CONFIG_FILE_PATH
 check_file_exists $yaml_file
 
 # Read and parse the YAML file
-python_image=$(yq e '.python.images' $yaml_file)
+python_image=$(yq e '.python.image' $yaml_file)
 container_name=$(yq e '.python.default_container_name' $yaml_file)
 echo "python_image: $python_image"
 echo "container_name: $container_name"
