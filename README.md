@@ -11,13 +11,21 @@ Before you begin, ensure that you have Docker installed. It's also helpful to ha
 <table>
     <tr>
         <th>Language</th>
-        <th>Path</th>
+        <th>DockerHub Image</th>
+        <th>Content</th>
         <th>User guide</th>
     </tr>
     <tr>
         <td>Python</td>
+        <td><a href="https://hub.docker.com/_/python">python image</a></td>
         <td><a href="./env/python/">python</a></td>
         <td>✔️ <a href="./env/python/README.md">Python Usage</a></td>
+    </tr>
+    <tr>
+        <td>Powershell</td>
+        <td><a href="./env/powershell/">powershell image</a></td>
+        <td><a href="https://hub.docker.com/_/microsoft-powershell">microsoft-powershell</a></td>
+        <td>✔️ <a href="./env/powershell/README.md">Powershell Usage</a></td>
     </tr>
 </table>
 
