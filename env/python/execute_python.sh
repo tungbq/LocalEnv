@@ -5,7 +5,7 @@
 script_path=$1
 
 # Variables
-python_image="python:3.12"
+python_image="python:3.11"
 container_name="pytest01"
 src_dir="$(pwd)/src"
 
@@ -22,11 +22,14 @@ if [ -z "$script_path" ]; then
   usage
 fi
 
+# Command to execute
+CMD="python /tmp/$script_path"
+
 # Execute the Python script inside Docker
 docker run --rm \
   --name "$container_name" \
   -v "$src_dir":/tmp/src \
-  "$python_image" python /tmp/"$script_path"
+  "$python_image" $CMD
 
 # Check the exit status of the Docker run command
 if [ $? -eq 0 ]; then
