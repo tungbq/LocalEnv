@@ -6,10 +6,10 @@
 git clone https://github.com/tungbq/LocalEnv.git
 ```
 
-- Write your own python script at `./src` folder
+- Write your own groovy script at `./src` folder
 - Execute your script
 
 ```bash
 cd env/python
-./execute_python.sh src/demo.py
+./execute_groovy.sh src/demo.groovy
 ```
