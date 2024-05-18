@@ -1,8 +1,12 @@
 # Configuration file for LocalEnv tool
 python:
   image: "python:3.12"
-  default_container_name: "pyenv"
+  default_container_name: "pyEnv"
 
 powershell:
   image: "mcr.microsoft.com/powershell:latest"
-  default_container_name: "psenv"
+  default_container_name: "psEnv"
+
+groovy:
+  image: "groovy:latest"
+  default_container_name: "groovyEnv"
