@@ -20,21 +20,21 @@ Before you begin, ensure that you have Docker installed. It's also helpful to ha
         <td>Python</td>
         <td><a href="https://hub.docker.com/_/python">python image</a></td>
         <td><a href="./env/python/">python</a></td>
-        <td>`./lei.sh python env/python/src/demo/demo.py`</td>
+        <td>./lei.sh python env/python/src/demo/demo.py</td>
         <td>✔️ <a href="./env/python/README.md">Python Usage</a></td>
     </tr>
     <tr>
         <td>Powershell</td>
         <td><a href="https://hub.docker.com/_/microsoft-powershell">microsoft-powershell</a></td>
         <td><a href="./env/powershell/">powershell image</a></td>
-        <td>`./lei.sh powershell env/powershell/src/demo/demo.ps1`</td>
+        <td>./lei.sh powershell env/powershell/src/demo/demo.ps1</td>
         <td>✔️ <a href="./env/powershell/README.md">Powershell Usage</a></td>
     </tr>
     <tr>
         <td>Groovy</td>
         <td><a href="https://hub.docker.com/_/groovy">groovy image</a></td>
         <td><a href="./env/groovy/">groovy</a></td>
-        <td>`./lei.sh groovy env/groovy/src/demo/demo.groovy`</td>
+        <td>./lei.sh groovy env/groovy/src/demo/demo.groovy</td>
         <td>✔️ <a href="./env/groovy/README.md">Groovy Usage</a></td>
     </tr>
 
