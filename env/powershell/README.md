@@ -6,10 +6,9 @@
 git clone https://github.com/tungbq/LocalEnv.git
 ```
 
-- Write your own python script at `./src` folder
+- Write your own python script at `./env/powershell/src/` folder
 - Execute your script
 
 ```bash
-cd env/powershell
-./execute_ps.sh src/demo.ps1
+./lei.sh powershell env/powershell/src/demo.ps1
 ```

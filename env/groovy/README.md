@@ -1,4 +1,4 @@
-# Run python locally
+# Run groovy locally
 
 - Clone `LocalEnv` repository
 
@@ -6,10 +6,9 @@
 git clone https://github.com/tungbq/LocalEnv.git
 ```
 
-- Write your own groovy script at `./src` folder
+- Write your own groovy script at `./env/groovy/src/` folder
 - Execute your script
 
 ```bash
-cd env/python
-./execute_groovy.sh src/demo.groovy
+./lei.sh groovy env/groovy/src/demo.groovy
 ```

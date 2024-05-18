@@ -6,10 +6,9 @@
 git clone https://github.com/tungbq/LocalEnv.git
 ```
 
-- Write your own python script at `./src` folder
+- Write your own python script at `./env/python/src/` folder
 - Execute your script
 
 ```bash
-cd env/python
-./execute_python.sh src/demo.py
+./lei.sh python env/python/src/demo.py
 ```
