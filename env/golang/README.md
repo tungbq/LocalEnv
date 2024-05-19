@@ -1,4 +1,4 @@
-# Run python locally
+# Run golang locally
 
 - Clone `LocalEnv` repository
 
@@ -7,9 +7,9 @@ git clone https://github.com/tungbq/LocalEnv.git
 cd LocalEnv
 ```
 
-- Write your own python script at `./env/python/src/` folder
+- Write your own golang script at `./env/golang/src/` folder
 - Execute your script
 
 ```bash
-./localenv python env/python/demo.py
+./localenv golang env/golang/demo.go
 ```
