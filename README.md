@@ -1,6 +1,6 @@
-<h1 align="center">LocalEnv</h1>
+<h1 align="center">🐳 cei</h1>
 
-<p align="center">Local containerized environment supports various languages.</p>
+<p align="center">cei - Containerized Environment Interface supports various languages</p>
 
 ## Prerequisites 🔓
 
