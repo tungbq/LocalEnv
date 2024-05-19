@@ -1,3 +1,4 @@
+# Test CI
 # Configuration file for LocalEnv tool
 python:
   image: "python:3.12"
