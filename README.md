@@ -6,17 +6,6 @@
 
 Before you begin, ensure that you have [Docker](https://docs.docker.com/engine/install/) installed. It's also helpful to have a basic understanding of Docker concepts.
 
-## Config file
-
-Configure your target environment via [config.yaml](config.yaml), for example:
-
-```yaml
-python:
-  image: 'python:3.12'
-  default_container_name: 'pyEnv'
-  base_command: 'python'
-```
-
 ## Supported Environment
 
 <table>
@@ -46,6 +35,46 @@ python:
     </tr>
 
 </table>
+
+## Usage
+
+To use the LocalEnv tool, follow these steps:
+
+### 1. Clone the repository:
+
+```bash
+git clone https://github.com/tungbq/LocalEnv.git
+cd localenv
+```
+
+### 2. Configure your environment:
+
+Edit the [config.yaml](config.yaml) file to specify the details of the environment you want to use, for example:
+
+```yaml
+python:
+  image: 'python:3.12'
+  default_container_name: 'pyEnv'
+  base_command: 'python'
+```
+
+### 3. Run a script
+
+Use the following command format to run your script within the containerized environment:
+
+```bash
+./localenv <language> <script_path>
+```
+
+For example, to run a Python script:
+
+```bash
+./localenv python env/python/demo.py
+```
+
+### 4. Access the user guide:
+
+Refer to the user guide for detailed instructions on using each supported environment. Links to the user guides are available in the table above.
 
 ## Troubleshooting
 
