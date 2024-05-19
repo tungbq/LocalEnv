@@ -1,6 +1,6 @@
 <h1 align="center">🐳 LocalEnv</h1>
 
-<p align="center">Local Containerized Environment supports various languages</p>
+<p align="center">Local Containerized Environment supports various programming languages</p>
 
 ## Introduction 👋
 
@@ -10,11 +10,23 @@ LocalEnv is a tool designed for local development, allowing you to execute code 
 
 Before you begin, ensure that you have [Docker](https://docs.docker.com/engine/install/) installed. It's also helpful to have a basic understanding of Docker concepts.
 
+## Key Features 🚀
+
+- **Quickly write and run code**: LocalEnv allows you to rapidly write and execute code in containerized environments locally.
+
+- **[localenv](./localenv) script**: The repository includes a convenient `localenv` script that simplifies the execution of code in different languages within Docker containerized environments.
+
+- **[env](./env/) folder**: Contains the code and document for each supported language.
+
+- **[config.yaml](./config.yaml) file**: This config file allows users to configure their target environment settings easily. This includes specifying Docker images, default container names, and base commands for each language.
+
 ## Demo 🔥
 
 ```bash
+# Clone LocalEnv repository
 git clone https://github.com/tungbq/LocalEnv.git
 cd LocalEnv
+# Execute python code
 ./localenv python env/python/demo.py
 ```
 
