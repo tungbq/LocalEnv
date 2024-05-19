@@ -70,6 +70,7 @@ Configure your environment:
 - Edit the [config.yaml](config.yaml) file to specify the details of the environment you want to use, for example:
 
 ```yaml
+# File: ./config.yaml
 python:
   image: 'python:3.12'
   default_container_name: 'pyEnv'
