@@ -4,7 +4,7 @@
 
 ## Prerequisites 🔓
 
-Before you begin, ensure that you have Docker installed. It's also helpful to have a basic understanding of Docker concepts.
+Before you begin, ensure that you have [Docker](https://docs.docker.com/engine/install/) installed. It's also helpful to have a basic understanding of Docker concepts.
 
 ## Config file
 
