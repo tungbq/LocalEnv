@@ -22,33 +22,12 @@ cd LocalEnv
 
 Current support languages in below table
 
-<table>
-    <tr>
-        <th>Language</th>
-        <th>Quick Start</th>
-        <th>User guide</th>
-        <th>Docker Image</th>
-    </tr>
-    <tr>
-        <td>Python</td>
-        <td>./localenv python env/python/demo.py</td>
-        <td><a href="./env/python/">python</a></td>
-        <td><a href="https://hub.docker.com/_/python">Find</a></td>
-    </tr>
-    <tr>
-        <td>Powershell</td>
-        <td>./localenv powershell env/powershell/demo.ps1</td>
-        <td><a href="./env/powershell/">powershell</a></td>
-        <td><a href="https://hub.docker.com/_/microsoft-powershell">Find</a></td>
-    </tr>
-    <tr>
-        <td>Groovy</td>
-        <td>./localenv groovy env/groovy/demo.groovy</td>
-        <td><a href="./env/groovy/">groovy</a></td>
-        <td><a href="https://hub.docker.com/_/groovy">Find</a></td>
-    </tr>
-
-</table>
+| Language   | Quick Start                                     | User guide                      | Image                                                 |
+| ---------- | ----------------------------------------------- | ------------------------------- | ----------------------------------------------------- |
+| Python     | `./localenv python env/python/demo.py`          | [python](./env/python/)         | [Find](https://hub.docker.com/_/python)               |
+| Powershell | `./localenv powershell env/powershell/demo.ps1` | [powershell](./env/powershell/) | [Find](https://hub.docker.com/_/microsoft-powershell) |
+| Groovy     | `./localenv groovy env/groovy/demo.groovy`      | [groovy](./env/groovy/)         | [Find](https://hub.docker.com/_/groovy)               |
+| Javascript | `./localenv javascript env/javascript/demo.js`  | [javascript](./env/javascript/) | [Find](https://hub.docker.com/_/node/)                |
 
 ## Usage 📖
 

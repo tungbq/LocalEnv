@@ -1,1 +1,1 @@
-println("Hello groovy!")
+println("Groovy: Hello world!")
