@@ -6,6 +6,17 @@
 
 Before you begin, ensure that you have Docker installed. It's also helpful to have a basic understanding of Docker concepts.
 
+## Config file
+
+Configure your target environment via [config.yaml](config.yaml), for example:
+
+```yaml
+python:
+  image: 'python:3.12'
+  default_container_name: 'pyEnv'
+  base_command: 'python'
+```
+
 ## Supported Environment
 
 <table>
@@ -13,25 +24,25 @@ Before you begin, ensure that you have Docker installed. It's also helpful to ha
         <th>Language</th>
         <th>Quick Start</th>
         <th>User guide</th>
-        <th>DockerHub Image</th>
+        <th>Docker Image</th>
     </tr>
     <tr>
         <td>Python</td>
-        <td>./lei.sh python env/python/src/demo/demo.py</td>
-        <td><a href="https://hub.docker.com/_/python">python image</a></td>
+        <td>./lei.sh python env/python/demo.py</td>
         <td><a href="./env/python/">python</a></td>
+        <td><a href="https://hub.docker.com/_/python">Find</a></td>
     </tr>
     <tr>
         <td>Powershell</td>
-        <td>./lei.sh powershell env/powershell/src/demo/demo.ps1</td>
-        <td><a href="./env/powershell/">powershell image</a></td>
-        <td><a href="https://hub.docker.com/_/microsoft-powershell">microsoft-powershell</a></td>
+        <td>./lei.sh powershell env/powershell/demo.ps1</td>
+        <td><a href="./env/powershell/">powershell</a></td>
+        <td><a href="https://hub.docker.com/_/microsoft-powershell">Find</a></td>
     </tr>
     <tr>
         <td>Groovy</td>
-        <td>./lei.sh groovy env/groovy/src/demo/demo.groovy</td>
+        <td>./lei.sh groovy env/groovy/demo.groovy</td>
         <td><a href="./env/groovy/">groovy</a></td>
-        <td><a href="https://hub.docker.com/_/groovy">groovy image</a></td>
+        <td><a href="https://hub.docker.com/_/groovy">Find</a></td>
     </tr>
 
 </table>

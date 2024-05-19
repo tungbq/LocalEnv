@@ -10,5 +10,5 @@ git clone https://github.com/tungbq/LocalEnv.git
 - Execute your script
 
 ```bash
-./lei.sh groovy env/groovy/src/demo/demo.groovy
+./lei.sh groovy env/groovy/demo.groovy
 ```
