@@ -6,7 +6,17 @@
 
 Before you begin, ensure that you have [Docker](https://docs.docker.com/engine/install/) installed. It's also helpful to have a basic understanding of Docker concepts.
 
-## Supported Environment
+## Demo 🔥
+
+```bash
+git clone https://github.com/tungbq/LocalEnv.git
+cd LocalEnv
+./localenv python env/python/demo.py
+```
+
+## Supported Environment 🚀
+
+Current support languages in below table
 
 <table>
     <tr>
@@ -36,7 +46,7 @@ Before you begin, ensure that you have [Docker](https://docs.docker.com/engine/i
 
 </table>
 
-## Usage
+## Usage 📖
 
 To use the LocalEnv tool, follow these steps:
 
@@ -45,8 +55,7 @@ To use the LocalEnv tool, follow these steps:
 - Clone the repository:
 
 ```bash
-git clone https://github.com/tungbq/LocalEnv.git
-cd localenv
+
 ```
 
 ### 2. Configure
@@ -89,3 +98,9 @@ Refer to the user guide for detailed instructions on using each supported enviro
 ## Troubleshooting
 
 - For common issue, visit [troubeshooting.md](./docs/troubeshooting.md)
+
+## Contributing
+
+- If you find this repository helpful, kindly consider showing your appreciation by giving it a star ⭐ Thanks! 💖
+- Feel free to open a new issue if you encounter the LocalEnv bug or want to request more content about LocalEnv
+- Submit a new issue (🐛) if you encounter the bug/error when using this repo
