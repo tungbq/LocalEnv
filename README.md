@@ -28,6 +28,8 @@ git clone https://github.com/tungbq/LocalEnv.git
 cd LocalEnv
 # Execute python code
 ./localenv python env/python/demo.py
+# Execute javascript code
+./localenv javascript env/javascript/demo.js	
 ```
 
 ## Supported Environment 🚀
