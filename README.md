@@ -59,7 +59,8 @@ To use the LocalEnv tool, follow these steps:
 - Clone the repository:
 
 ```bash
-
+git clone https://github.com/tungbq/LocalEnv.git
+cd LocalEnv
 ```
 
 ### 2. Configure
