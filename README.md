@@ -1,6 +1,6 @@
-<h1 align="center">🐳 cei</h1>
+<h1 align="center">🐳 LocalEnv</h1>
 
-<p align="center">cei - Containerized Environment Interface supports various languages</p>
+<p align="center">Local Containerized Environment supports various languages</p>
 
 ## Prerequisites 🔓
 
@@ -28,19 +28,19 @@ python:
     </tr>
     <tr>
         <td>Python</td>
-        <td>./cei python env/python/demo.py</td>
+        <td>./localenv python env/python/demo.py</td>
         <td><a href="./env/python/">python</a></td>
         <td><a href="https://hub.docker.com/_/python">Find</a></td>
     </tr>
     <tr>
         <td>Powershell</td>
-        <td>./cei powershell env/powershell/demo.ps1</td>
+        <td>./localenv powershell env/powershell/demo.ps1</td>
         <td><a href="./env/powershell/">powershell</a></td>
         <td><a href="https://hub.docker.com/_/microsoft-powershell">Find</a></td>
     </tr>
     <tr>
         <td>Groovy</td>
-        <td>./cei groovy env/groovy/demo.groovy</td>
+        <td>./localenv groovy env/groovy/demo.groovy</td>
         <td><a href="./env/groovy/">groovy</a></td>
         <td><a href="https://hub.docker.com/_/groovy">Find</a></td>
     </tr>
