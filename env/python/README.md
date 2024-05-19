@@ -10,5 +10,5 @@ git clone https://github.com/tungbq/LocalEnv.git
 - Execute your script
 
 ```bash
-./lei.sh python env/python/src/demo/demo.py
+./lei.sh python env/python/demo.py
 ```
