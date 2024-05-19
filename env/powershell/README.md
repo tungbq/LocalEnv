@@ -10,5 +10,5 @@ git clone https://github.com/tungbq/LocalEnv.git
 - Execute your script
 
 ```bash
-./lce powershell env/powershell/demo.ps1
+./cei powershell env/powershell/demo.ps1
 ```
