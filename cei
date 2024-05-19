@@ -1,0 +1,79 @@
+#!/bin/bash
+
+# Local Containerized Environment (lce)
+
+# Function to display usage information
+usage() {
+  cat <<EOF
+Usage: $0 <language> <script_path>
+Options:
+  --help            Display this help message and exit
+
+Arguments:
+  <language>        The programming language environment to use (e.g., python)
+  <script_path>     The path to the script to be executed within the Docker container
+EOF
+  exit 0
+}
+
+# Function to display an error message and usage information
+error_usage() {
+  echo "Error: $1"
+  usage
+}
+
+# Function to check if a file exists
+check_file_exists() {
+  local file_to_check=$1
+  if [ ! -f "$file_to_check" ]; then
+    echo "Error: YAML file '$file_to_check' not found."
+    exit 1
+  fi
+}
+
+# Function to validate input arguments
+check_input() {
+  local language=$1
+  local script_path=$2
+  if [[ -z "$language" || -z "$script_path" ]]; then
+    error_usage "Both language and script_path are required."
+  fi
+}
+
+# Variables
+CONFIG_FILE_PATH="./config.yaml"
+language=$1
+script_path=$2
+
+# Check for --help argument
+if [[ "$language" == "--help" || "$script_path" == "--help" ]]; then
+  usage
+fi
+
+# Validate input arguments
+check_input "$language" "$script_path"
+
+# Ensure the config file exists
+check_file_exists "$CONFIG_FILE_PATH"
+
+# Load and parse the YAML file using yq
+image=$(yq e ".$language.image" "$CONFIG_FILE_PATH")
+container_name=$(yq e ".$language.default_container_name" "$CONFIG_FILE_PATH")
+base_cmd=$(yq e ".$language.base_command" "$CONFIG_FILE_PATH")
+
+# Command to execute
+echo "Execute $language script in Docker..."
+
+docker run --rm \
+  --name "$container_name" \
+  -v "$(pwd)":/tmp/ \
+  -w /tmp/ \
+  "$image" $base_cmd $script_path
+
+# Check the exit status of the Docker run command
+if [ $? -eq 0 ]; then
+  echo "Script executed successfully."
+else
+  echo "Script execution failed."
+  exit 1
+fi
