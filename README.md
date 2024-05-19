@@ -2,6 +2,10 @@
 
 <p align="center">Local Containerized Environment supports various languages</p>
 
+## Introduction 👋
+
+LocalEnv is a tool designed for local development, allowing you to execute code in multiple languages without installing numerous tools on your PC. With Docker as the only prerequisite, you can seamlessly run code in various environments.
+
 ## Prerequisites 🔓
 
 Before you begin, ensure that you have [Docker](https://docs.docker.com/engine/install/) installed. It's also helpful to have a basic understanding of Docker concepts.
