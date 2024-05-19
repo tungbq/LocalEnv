@@ -24,7 +24,7 @@ python:
         <th>Language</th>
         <th>Quick Start</th>
         <th>User guide</th>
-        <th>DockerHub Image</th>
+        <th>Docker Image</th>
     </tr>
     <tr>
         <td>Python</td>
