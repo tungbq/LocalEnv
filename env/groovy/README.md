@@ -4,6 +4,7 @@
 
 ```bash
 git clone https://github.com/tungbq/LocalEnv.git
+cd LocalEnv
 ```
 
 - Write your own groovy script at `./env/groovy/src/` folder

@@ -4,6 +4,7 @@
 
 ```bash
 git clone https://github.com/tungbq/LocalEnv.git
+cd LocalEnv
 ```
 
 - Write your own python script at `./env/python/src/` folder

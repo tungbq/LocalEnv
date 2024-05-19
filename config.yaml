@@ -13,3 +13,8 @@ groovy:
   image: "groovy:latest"
   default_container_name: "groovyEnv"
   base_command: "groovy"
+
+javascript:
+  image: "node:latest"
+  default_container_name: "javascriptEnv"
+  base_command: "node"

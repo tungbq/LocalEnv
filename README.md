@@ -27,7 +27,7 @@ Current support languages in below table
         <th>Language</th>
         <th>Quick Start</th>
         <th>User guide</th>
-        <th>Docker Image</th>
+        <th>Image</th>
     </tr>
     <tr>
         <td>Python</td>
@@ -46,6 +46,12 @@ Current support languages in below table
         <td>./localenv groovy env/groovy/demo.groovy</td>
         <td><a href="./env/groovy/">groovy</a></td>
         <td><a href="https://hub.docker.com/_/groovy">Find</a></td>
+    </tr>
+    <tr>
+        <td>Javascript</td>
+        <td>./localenv javascript env/javascript/demo.js</td>
+        <td><a href="./env/javascript/">javascript</a></td>
+        <td><a href="https://hub.docker.com/_/node/">Find</a></td>
     </tr>
 
 </table>
