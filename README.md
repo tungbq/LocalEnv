@@ -23,8 +23,10 @@ Before you begin, ensure that you have [Docker](https://docs.docker.com/engine/i
 ## Demo 🔥
 
 ```bash
+# Clone LocalEnv repository
 git clone https://github.com/tungbq/LocalEnv.git
 cd LocalEnv
+# Execute python code
 ./localenv python env/python/demo.py
 ```
 
