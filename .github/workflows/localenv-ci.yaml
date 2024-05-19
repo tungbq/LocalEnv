@@ -37,3 +37,7 @@ jobs:
       - name: Verify local env execution - javascript
         run: |
           ./localenv javascript env/javascript/demo.js
+
+      - name: Verify local env execution - golang
+        run: |
+          ./localenv golang env/golang/demo.go

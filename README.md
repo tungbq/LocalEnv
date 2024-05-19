@@ -40,6 +40,7 @@ Current support languages in below table
 | Powershell | `./localenv powershell env/powershell/demo.ps1` | [powershell](./env/powershell/) | [Find](https://hub.docker.com/_/microsoft-powershell) |
 | Groovy     | `./localenv groovy env/groovy/demo.groovy`      | [groovy](./env/groovy/)         | [Find](https://hub.docker.com/_/groovy)               |
 | Javascript | `./localenv javascript env/javascript/demo.js`  | [javascript](./env/javascript/) | [Find](https://hub.docker.com/_/node/)                |
+| Golang     | `./localenv golang env/golang/demo.go`          | [go](./env/golang/)             | [Find](https://hub.docker.com/_/golang/)              |
 
 ## Usage 📖
 
