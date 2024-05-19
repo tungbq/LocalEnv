@@ -6,6 +6,17 @@
 
 Before you begin, ensure that you have Docker installed. It's also helpful to have a basic understanding of Docker concepts.
 
+## Config file
+
+Configure your target environment via [config.yaml](config.yaml), for example:
+
+```yaml
+python:
+  image: 'python:3.12'
+  default_container_name: 'pyEnv'
+  base_command: 'python'
+```
+
 ## Supported Environment
 
 <table>
