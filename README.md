@@ -18,7 +18,7 @@ Before you begin, ensure that you have [Docker](https://docs.docker.com/engine/i
 
 - **[env](./env/) folder**: Contains the code and document for each supported language.
 
-- **[config.yaml](./config.yaml) config file**: This file allows users to configure their target environment settings easily. This includes specifying Docker images, default container names, and base commands for each language.
+- **[config.yaml](./config.yaml) file**: This config file allows users to configure their target environment settings easily. This includes specifying Docker images, default container names, and base commands for each language.
 
 ## Demo 🔥
 
