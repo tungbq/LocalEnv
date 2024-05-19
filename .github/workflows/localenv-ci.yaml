@@ -1,0 +1,39 @@
+name: LocalEnv CI
+
+on:
+  workflow_dispatch:
+  pull_request:
+    branches: ['main']
+    paths:
+      - 'config.yaml'
+      - '.github/workflows/localenv-ci.yml'
+      - 'localenv'
+      - 'env/*'
+
+# Abort the previous running CI workflow in the same pull request
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out the repo
+        uses: actions/checkout@v4
+
+      - name: Verify local env execution - python
+        run: |
+          ./localenv python env/python/demo.py
+
+      - name: Verify local env execution - powershell
+        run: |
+          ./localenv powershell env/powershell/demo.ps1
+
+      - name: Verify local env execution - groovy
+        run: |
+          ./localenv groovy env/groovy/demo.groovy
+
+      - name: Verify local env execution - javascript
+        run: |
+          ./localenv javascript env/javascript/demo.js
