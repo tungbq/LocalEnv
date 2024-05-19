@@ -1,6 +1,7 @@
 #!/bin/bash
+set -e
 
-# Local Containerized Environment (lce)
+# Local Containerized Environment (localenv)
 
 # Function to display usage information
 usage() {

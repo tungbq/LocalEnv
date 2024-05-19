@@ -1,20 +1,25 @@
 # Configuration file for LocalEnv tool
 python:
   image: "python:3.12"
-  default_container_name: "pyEnv"
+  default_container_name: "python-env"
   base_command: "python"
 
 powershell:
   image: "mcr.microsoft.com/powershell:latest"
-  default_container_name: "psEnv"
+  default_container_name: "ps-env"
   base_command: ""
 
 groovy:
   image: "groovy:latest"
-  default_container_name: "groovyEnv"
+  default_container_name: "groovy-env"
   base_command: "groovy"
 
 javascript:
   image: "node:latest"
-  default_container_name: "javascriptEnv"
+  default_container_name: "javascript-env"
   base_command: "node"
+
+golang:
+  image: "golang:latest"
+  default_container_name: "golang-env"
+  base_command: "go run"
