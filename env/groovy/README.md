@@ -12,5 +12,4 @@ cd LocalEnv
 
 ```bash
 ./localenv groovy env/groovy/demo.groovy
-demo.groovy
 ```
