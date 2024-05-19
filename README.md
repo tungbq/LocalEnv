@@ -79,7 +79,10 @@ python:
 
 ### 3. Code
 
-Write your own code unser [env](./env/), for example: `env/python/demo.py`
+Write your own code under [env](./env/), for example:
+
+- Python: [python](./env/python/)
+- Powershell: [powershell](./env/powershell/)
 
 ### 4. Run
 
