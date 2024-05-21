@@ -23,3 +23,8 @@ golang:
   image: "golang:latest"
   default_container_name: "golang-env"
   base_command: "go run"
+
+mysql:
+  image: "mysql:latest"
+  default_container_name: "mysql-env"
+  base_command: "mysql"
