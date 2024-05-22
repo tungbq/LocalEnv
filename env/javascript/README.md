@@ -11,5 +11,5 @@ cd LocalEnv
 - Execute your script
 
 ```bash
-./localenv javascript env/javascript/demo.javascript
+./localenv javascript env/javascript/demo.js
 ```
