@@ -104,7 +104,7 @@ Refer to the user guide for detailed instructions on using each supported enviro
 - For common issue, visit [troubeshooting.md](./docs/troubeshooting.md)
 
 ## Contributing
-
+- See: [CONTRIBUTING.md](./CONTRIBUTING.md)
 - If you find this repository helpful, kindly consider showing your appreciation by giving it a star ⭐ Thanks! 💖
 - Feel free to open a new issue if you encounter the LocalEnv bug or want to request more content about LocalEnv
 - Submit a new issue (🐛) if you encounter the bug/error when using this repo
