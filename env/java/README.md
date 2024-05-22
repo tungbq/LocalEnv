@@ -1,4 +1,4 @@
-# Run javascript locally
+# Run java locally
 
 - Clone `LocalEnv` repository
 
@@ -7,9 +7,9 @@ git clone https://github.com/tungbq/LocalEnv.git
 cd LocalEnv
 ```
 
-- Write your own javascript script at `./env/javascript/src/` folder
+- Write your own java script at `./env/java/src/` folder
 - Execute your script
 
 ```bash
-./localenv javascript env/javascript/demo.js
+./localenv java env/java/demo.java
 ```

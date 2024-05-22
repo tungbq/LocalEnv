@@ -43,6 +43,7 @@ Current support languages in below table
 | Groovy     | `./localenv groovy env/groovy/demo.groovy`      | [groovy](./env/groovy/)         | [Find](https://hub.docker.com/_/groovy)               |
 | Javascript | `./localenv javascript env/javascript/demo.js`  | [javascript](./env/javascript/) | [Find](https://hub.docker.com/_/node/)                |
 | Golang     | `./localenv golang env/golang/demo.go`          | [go](./env/golang/)             | [Find](https://hub.docker.com/_/golang/)              |
+| Java       | `./localenv java env/java/demo.java`            | [java](./env/java/)             | [Find](https://hub.docker.com/_/openjdk)              |
 
 ## Usage 📖
 

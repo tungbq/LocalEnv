@@ -23,3 +23,8 @@ golang:
   image: "golang:latest"
   default_container_name: "golang-env"
   base_command: "go run"
+
+java:
+  image: "openjdk:latest"
+  default_container_name: "java-env"
+  base_command: "java"
